@@ -7,7 +7,6 @@ import { Route, Switch as Switching } from "react-router";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 import AboutPage from "./Pages/AboutPage";
-import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
@@ -31,6 +30,13 @@ function App() {
     }
   };
 
+  function switcher() {
+    setNavToggle(!navToggle);
+    setTimeout(() => {
+      setNavToggle(false);
+    }, 3000);
+  }
+
   return (
     <div className="App">
       <Sidebar navToggle={navToggle} />
@@ -53,7 +59,7 @@ function App() {
       </div>
 
       <div className="ham-burger-menu">
-        <IconButton onClick={() => setNavToggle(!navToggle)}>
+        <IconButton onClick={() => switcher()}>
           <MenuIcon />
         </IconButton>
       </div>
@@ -75,9 +81,6 @@ function App() {
           </Route>
           <Route path="/portfolios" exact>
             <PortfoliosPage />
-          </Route>
-          <Route path="/blogs" exact>
-            <BlogsPage />
           </Route>
           <Route path="/contact" exact>
             <ContactPage />

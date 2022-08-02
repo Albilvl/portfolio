@@ -1,29 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
 import PrimaryButton from "./PrimaryButton";
 
 function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src='/image0.jpeg' alt="" />
+        <img src="/image0.jpeg" alt="" />
       </div>
       <div className="right-content">
         <h4>
           <span>Al-Bilal Bankole</span>
         </h4>
         <p className="paragraph">
-          My name is Al-Bilal but you can call me Al. I'm a Software Engineer, with a
-          background in the Pyschology and coaching. After attending a coding
-          bootcamp, Flatiron School, I have experience with HTML, CSS,
+          My name is Al-Bilal but you can call me Al. I'm a Software Engineer,
+          with a background in the Pyschology and coaching. After attending a
+          coding bootcamp, Flatiron School, I have experience with HTML, CSS,
           Javascript, React, SQL, Ruby, Object-Oriented Programming, Ruby on
           Rails, Sinatra, ActiveRecord, Heroku, SQLite, PostgreSQL, RSpec, MVC
-          Software Architecture. I'm looking for Frontend Software Engineering roles
-          primarily, and secondly for roles as a Full-Stack Software Engineer. I
-          am very interested in being in an environment where I can grow,
-          learning languages such as Python, three.js, Java, C#, C++, Vue.js,
-          etc.
+          Software Architecture. I'm looking for Frontend Software Engineering
+          roles primarily, and secondly for roles as a Full-Stack Software
+          Engineer. I am very interested in being in an environment where I can
+          grow, learning languages such as Python, three.js, Java, C#, C++,
+          Vue.js, etc.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -41,9 +40,11 @@ function ImageSection() {
             <p>: Yes</p>
           </div>
         </div>
-        <a href ="https://docs.google.com/document/d/e/2PACX-1vQfNGUjGN-Fs5Q4lNoTHPRkWYhG8EW7Q9t6xFXnQrygUcZBtfl2brFpUIk4yBjBKTWVKvLRU5XFYvkY/pub" target="_blank">
-
-        <PrimaryButton title={"Download Résumé"}  />
+        <a
+          href="https://docs.google.com/document/d/e/2PACX-1vQfNGUjGN-Fs5Q4lNoTHPRkWYhG8EW7Q9t6xFXnQrygUcZBtfl2brFpUIk4yBjBKTWVKvLRU5XFYvkY/pub"
+          target="_blank"
+        >
+          <PrimaryButton title={"Download Résumé"} />
         </a>
       </div>
     </ImageSectionStyled>
