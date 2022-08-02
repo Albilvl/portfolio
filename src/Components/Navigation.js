@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <NavigationStyled>
       <div className="avatar">
-        <img src="/profile-pic (4).png" alt="Al-Bilal Bankole" />
+        <img src="./profile-pic (4).png" alt="Al-Bilal Bankole" />
       </div>
       <ul className="nav-items">
         <li className="nav-item">
